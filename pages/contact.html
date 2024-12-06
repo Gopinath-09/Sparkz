@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="../images/intro/sparkzlogojapedited.png"/>
+    
+    <link rel="stylesheet" href="../css/components/navbar.css?v=10" asp-append-version="true">
+    <link rel="stylesheet" href="../css/pages/contact.css?v=10" asp-append-version="true">
+    
+</head>
+<body>
+    <header>
+        <div class='nvbar'>
+            <input type='checkbox' onclick="bluring()" name='' id='nvticker'>
+            <div id="nvbarbody" class='nvbarbody'>
+                <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                <label class='nvbaropener' for='nvticker'>
+                    <div class="threebar">
+                        <span></span><span></span><span></span>
+                    </div>
+                </label>
+            </div>
+            <div class='nvbaropen'>
+                <div class='nveventlogoandbar'>
+                    <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                    <label class='nvbarcloser' for='nvticker'>
+                        <div class="twobarclose">
+                            <span id="twobarfirst"></span><span id="twobarsecond"></span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <div class="nvlinks">
+                        <a href='./sparkz.html'><div><p>Home</p></div></a>
+                        <a href='./events.html'><div><p>Events</p></div></a>
+                        <a href='./announcements.html'><div><p>Celebrities</p></div></a>
+                        <a href='./gallery.html'><div><p>Gallery</p></div></a>
+                        <a href='./sponsers.html'><div><p>Register</p></div></a>
+                        <a id="nvlinksactivecolor" href='#'><div><p>Contact</p></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gotop">
+                <a href="#bodyar">GO TOP</a>
+            </div>
+            
+            <script type="text/javascript">
+                function bluring(){
+                    const ticker = document.getElementById('nvticker');
+                    const hidebodyar = document.getElementById('bodyar');
+                    if(ticker.checked == true){
+                        hidebodyar.style.filter = 'blur(25px)';
+                        hidebodyar.style.filter = '-webkit-blur(25px)';
+                        hidebodyar.style.opacity = '50%';
+                        hidebodyar.style.transition ='all ease-in .6s';
+                        hidebodyar.style.height = '100dvh';
+                        hidebodyar.style.overflow = 'hidden';
+                    }
+                    else if(ticker.checked == false){
+                        hidebodyar.style.filter = 'none';
+                        hidebodyar.style.opacity = '100%';
+                        hidebodyar.style.transition ='all ease-out .5s';
+                        hidebodyar.style.height = 'auto';
+                        hidebodyar.style.overflow = 'auto';
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    <div id="bodyar" class="bodyar">
+        <header>
+            <h1>CONTACT</h1>
+        </header>
+        <div class="contactinformation">
+            <h3>ORAGANIZER'S CONTACTS:</h3>
+            <div class="fc">
+                <h4>Faculty Coordinators</h4>
+                <div class="flex">
+                    <div>
+                        <span><img src="../images/intro/profile-icon-png-910.png" alt=""><span>Dr. J. Pradeepkandhasamy</span> </span>
+                        <p><img id="call" src="../images/intro/phone-icon-923.png" alt=""><a href="tel:+919486118219">+91-9486118219</a></p>
+                    </div>
+                    <div>
+                        <span><img src="../images/intro/profile-icon-png-910.png" alt=""></i> <span>Mr. S. J. Kabilan</span></span>
+                        <p><img id="call" src="../images/intro/phone-icon-923.png" alt=""><a href="tel:+919629669335">+91-9629669335</a></p>
+                    </div>
+                    <div>
+                        <span><img src="../images/intro/profile-icon-png-910.png" alt=""></i><span>Mrs. P. Priya</span></span>
+                        <p><img id="call" src="../images/intro/phone-icon-923.png" alt=""><a href="tel:+919486332985">+91-9486332985</a></p>
+                    </div>
+                    <div>
+                        <span><img src="../images/intro/profile-icon-png-910.png" alt=""></i><span>Ms. Sreelekha T. K.</span></span>
+                        <p><img id="call" src="../images/intro/phone-icon-923.png" alt=""><a href="tel:+918943027799">+91-8943027799</a></p>
+                    </div>
+                    <div>
+                        <span><img src="../images/intro/profile-icon-png-910.png" alt=""></i><span>Ms. M. M. Sangeetha</span></span>
+                        <p><img id="call" src="../images/intro/phone-icon-923.png" alt=""><a href="tel:+919345827188">+91-9345827188</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sc">
+                <h4>Student Coordinator</h4>
+                <div class="flex">
+                    <div>
+                        <span><img src="../images/intro/profile-icon-png-910.png" alt=""></i><span>Sheryl Shekinah</span></span>
+                        <p><img id="call" src="../images/intro/phone-icon-923.png" alt=""><a href="tel:+917010029051">+91-7010029051</a></p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="bccontact">
+            <div class="contactsocialmedia">
+                <a href="https://www.instagram.com/sparkz_kare?igsh=aHdjeG94YTgzdGFn"><img src="../images/intro/insta.webp" alt=""> <span>Instagram</span></a>
+                <a href="tel:+919486118219"><img id="call" src="../images/intro/phone-icon-928.png" alt=""> <span>Contact</span></a>
+                <a href="mailto: sparkz@klu.ac.in"><img src="../images/intro/email-icon-106.png" alt=""><span>Gmail</span></a>
+                <a href="https://maps.app.goo.gl/S9Pd8f5chnEGWsDv6"><img id="location" src="../images/intro/address-icon-1751.png" alt=""><span>Location</span></a>
+            </div>
+        </div>
+        <div class="registernow">
+            <a href="../pages/sponsers.html">
+                <i class="fa-regular fa-hand-point-right"></i>
+                <p>Register Now</p>
+                <i class="fa-regular fa-hand-point-left"></i>
+            </a>
+        </div><br><br><br><br><br><br><br>
+    </div>
+</body>
+</html>

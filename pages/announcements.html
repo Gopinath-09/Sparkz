@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrities</title>
+    <link rel="icon" type="image/png" href="../images/intro/sparkzlogojapedited.png"/>
+
+    <link rel="stylesheet" href="../css/components/navbar.css?v=10" asp-append-version="true">
+    <link rel="stylesheet" href="../css/pages/announcements.css?v=10" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <div class='nvbar'>
+            <input type='checkbox' onclick="bluring()" name='' id='nvticker'>
+            <div id="nvbarbody" class='nvbarbody'>
+                <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                <label class='nvbaropener' for='nvticker'>
+                    <div class="threebar">
+                        <span></span><span></span><span></span>
+                    </div>
+                </label>
+            </div>
+            <div class='nvbaropen'>
+                <div class='nveventlogoandbar'>
+                    <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                    <label class='nvbarcloser' for='nvticker'>
+                        <div class="twobarclose">
+                            <span id="twobarfirst"></span><span id="twobarsecond"></span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <div class="nvlinks">
+                        <a href='./sparkz.html'><div><p>Home</p></div></a>
+                        <a href='./events.html'><div><p>Events</p></div></a>
+                        <a id="nvlinksactivecolor" href='#'><div><p>Celebrities</p></div></a>
+                        <a href='./gallery.html'><div><p>Gallery</p></div></a>
+                        <a href='./sponsers.html'><div><p>Register</p></div></a>
+                        <a href='./contact.html'><div><p>Contact</p></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gotop">
+                <a href="#bodyar">GO TOP</a>
+            </div>
+            
+            <script type="text/javascript">
+                function bluring(){
+                    const ticker = document.getElementById('nvticker');
+                    const hidebodyar = document.getElementById('bodyar');
+                    if(ticker.checked == true){
+                        hidebodyar.style.filter = 'blur(25px)';
+                        hidebodyar.style.filter = '-webkit-blur(25px)';
+                        hidebodyar.style.opacity = '50%';
+                        hidebodyar.style.transition ='all ease-in .6s';
+                        hidebodyar.style.height = '100dvh';
+                        hidebodyar.style.overflow = 'hidden';
+                    }
+                    else if(ticker.checked == false){
+                        hidebodyar.style.filter = 'none';
+                        hidebodyar.style.opacity = '100%';
+                        hidebodyar.style.transition ='all ease-out .5s';
+                        hidebodyar.style.height = 'auto';
+                        hidebodyar.style.overflow = 'auto';
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    <div id="bodyar" class="bodyar">
+        <header>
+            <h1>Celebrities</h1>
+        </header>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img src="../images/celebrities/20240215145707_instagram_38.webp" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #db211e;">Chemmeen Band</h1>Live in Concert by Chemmeen Band Ft.</p><a href="https://www.instagram.com/chemmeenband_official?igsh=ZnN5YjFjeml5OTl4"><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img src="../images/celebrities/IMG-20240217-WA0027.jpg" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #10f770;">Seniorz Melam</h1>Live in Concert by Seniorz Melam.</p><a href="https://www.instagram.com/seniorz_melam_official?igsh=MXdmNWN3enBwcWd4eQ=="><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img id="verti" src="../images/celebrities/IMG_3820.JPG" alt=""></div>
+                <div class="celecontent"><p><h1>Ritika Singh</h1> <li>Indian Actress</li><li>Former Boxer</li></p><a href="https://www.instagram.com/ritika_offl?igsh=MTY5bmdpd2kzbjhmcQ=="><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img src="../images/celebrities/99images-bala-vijay-tv-hd-photos-wallpapers-for-mobile-download-whatsapp-dp-1080p-gecsp-ll2z.jpg" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #fcbf96;">KPY BALA</h1> <li>Actor</li><li>Comedian</li><li>Entertainer</li></p><a href="https://www.instagram.com/bjbala_kpy?igsh=cjZ4anJibjFiZHdj"><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img id="verti" src="../images/celebrities/IMG_2839.JPG" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #7d6bb2;">SANDY SUNDAR</h1> <li>Dance Artist.</li></p><a href="https://www.instagram.com/sandysundar_360?igsh=MWJldDQycDUza3NrOQ=="><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img id="verti" src="../images/celebrities/36543ec5-a88e-4856-aa24-8402fb04dd89.JPG" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #0069cc;">Abu Rahim. R</h1> <li>Fashion Model</li><li>Actor</li>
+                    <li>Mr. IFT international 2021 <br></li>
+                    <li>Mr. India 2020 <br></li>
+                    <li>Mr. South India 2020<br></li>
+                    <li>Mr. Chennai 2021<br></li>
+                    <li>Mr. South India star walker 2020<br></li>
+                    <li>Mr. Perfect 2020</li>
+                </p><a href="https://www.instagram.com/_abu_rahim_00?igsh=NWhvZHUzbDJmODAw"><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img id="verti" src="../images/celebrities/mehabooba.jpg" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #eca372;">Delonia Prathiksha J P</h1>
+                    <li>Fashion Model</li>
+                    <li>Archaeologist <br></li>
+                    <li>IFT Ms.International 2nd RU'23 <br></li>
+                    <li>Founder of Studio 10 salons <br></li>
+                    <li>Dancer</li>
+                </p><a href="https://www.instagram.com/d_glamaholic_soul?igsh=YWd0MjMzdGpqaWN2"><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img id="verti" src="../images/celebrities/IMG_20240219_080707_592.jpg" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #fe0002;">SCARCE - Kanishk</h1> <li>Music producer</li><li>Beatmaker</li><li>Singer</li><li>Rapper</li></p><a href="https://www.instagram.com/scarcemusic?igsh=MTA0eGFnaGhuZDBqeQ=="><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img id="verti" src="../images/celebrities/3.jpg" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #fd9c3b;">JERUSON</h1> <li>Music producer</li><li>Multilingual Rapper</li></p><a href="https://www.instagram.com/jeruson_music?igsh=MWtqNmg1b2VidXlreA=="><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+        <div class="celes">
+            <div class="cele">
+                <div class="celeimg"><img id="verti" src="../images/celebrities/IMG_20230717_120738_458.jpg" alt=""></div>
+                <div class="celecontent"><p><h1 style="color: #bcc6ec;">PEACY</h1> <li>Rapper</li><li>Composer</li><li>Lyricist</li></p><a href="https://www.instagram.com/itspeacy4u?igsh=a2tjcXpkYTR5ZGo1"><img src="../images/intro/insta.webp" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

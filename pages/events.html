@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="icon" type="image/png" href="../images/intro/sparkzlogojapedited.png"/>
+    
+    <link rel="stylesheet" href="../css/components/navbar.css?v=10" asp-append-version="true">
+    <link rel="stylesheet" href="../css/pages/events.css?v=10" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <div class='nvbar'>
+            <input type='checkbox' onclick="bluring()" name='' id='nvticker'>
+            <div id="nvbarbody" class='nvbarbody'>
+                <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                <label class='nvbaropener' for='nvticker'>
+                    <div class="threebar">
+                        <span></span><span></span><span></span>
+                    </div>
+                </label>
+            </div>
+            <div class='nvbaropen'>
+                <div class='nveventlogoandbar'>
+                    <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                    <label class='nvbarcloser' for='nvticker'>
+                        <div class="twobarclose">
+                            <span id="twobarfirst"></span><span id="twobarsecond"></span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <div class="nvlinks">
+                        <a href='./sparkz.html'><div><p>Home</p></div></a>
+                        <a id="nvlinksactivecolor" href='#'><div><p>Events</p></div></a>
+                        <a href='./announcements.html'><div><p>Celebrities</p></div></a>
+                        <a href='./gallery.html'><div><p>Gallery</p></div></a>
+                        <a href='./sponsers.html'><div><p>Register</p></div></a>
+                        <a href='./contact.html'><div><p>Contact</p></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gotop">
+                <a href="#bodyar">GO TOP</a>
+            </div>
+            
+            <script type="text/javascript">
+                function bluring(){
+                    const ticker = document.getElementById('nvticker');
+                    const hidebodyar = document.getElementById('bodyar');
+                    if(ticker.checked == true){
+                        hidebodyar.style.filter = 'blur(25px)';
+                        hidebodyar.style.filter = '-webkit-blur(25px)';
+                        hidebodyar.style.opacity = '50%';
+                        hidebodyar.style.transition ='all ease-in .6s';
+                        hidebodyar.style.height = '100dvh';
+                        hidebodyar.style.overflow = 'hidden';
+                    }
+                    else if(ticker.checked == false){
+                        hidebodyar.style.filter = 'none';
+                        hidebodyar.style.opacity = '100%';
+                        hidebodyar.style.transition ='all ease-out .5s';
+                        hidebodyar.style.height = 'auto';
+                        hidebodyar.style.overflow = 'auto';
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    <div id="bodyar" class="bodyar">
+        <div class="pagename"><center><h1>Events</h1></center></div>
+        <div class="daysofevents">
+            <div id="dayone">
+                <ul>
+                    <h2>DAY 1</h2>(Click to go)<br><br>
+                    <li><a href="#music">Ensemble Combat Battle of the Bands</a></li>
+                    <li><a href="#music">Amplify Me - Solo instrumental</a></li>
+                    <li><a href="#dance">Enigma - Solo dance</a></li>
+                    <li><a href="#dance">Rhythm Riot-Dance battle</a></li>
+                    <li><a href="#dance">Duetry - Duo Dance</a></li>
+                    <li><a href="#variety">Make a film</a></li>
+                    <li><a href="#variety">IPL Auction</a></li>
+                    <li><a href="#art">Coffee painting</a></li>
+                    <li><a href="#art">Lantern Making</a></li>
+                    <li><a href="#tm">Pick and Speak</a></li>
+                    <li><a href="#tm">Book Review</a></li>
+                    <li><a href="#nc">Paint  with Nature</a></li>
+                    <li><a href="#nc">ADZAP</a></li>
+                    <li><a href="#nc">Obstacle Race</a></li>
+                    <li><a href="#yt">Flame Free Cuisine</a></li>
+                    <li><a href="#pc">Graphix</a></li>
+                    <li><a href="#pc">Connection</a></li>
+                    <li><a href="#yrc">Don't Answer</a></li>
+                    <li><a href="#yrc">Human Knot challenge</a></li>
+                    <li><a href="#vc">Tollywood Quiz</a></li>
+                </ul>
+            </div>
+            <div id="daytwo">
+                <ul>
+                    <h2>DAY 2</h2>(Click to go)<br><br>
+                    <li><a href="#music">Harmony Hanabi - Solo singing</a></li>
+                    <li><a href="#music">Rap Battle</a></li>
+                    <li><a href="#dance">Team Tempo - Group Dance</a></li>
+                    <li><a href="#variety">Dramatics</a></li>
+                    <li><a href="#variety">Kollywood Quiz</a></li>
+                    <li><a href="#art">Puzzle</a></li>
+                    <li><a href="#art">Portrait Relay</a></li>
+                    <li><a href="#fashion">Fashion Parade</a></li>
+                    <li><a href="#fashion">Fashion Fiesta - Mr. & Ms.Sparkz</a></li>
+                    <li><a href="#fashion">Fashion Photography</a></li>
+                    <li><a href="#tm">Signature</a></li>
+                    <li><a href="#tm">Debate</a></li>
+                    <li><a href="#nc">Squid Game</a></li>
+                    <li><a href="#nc">Scavenger hunt</a></li>
+                    <li><a href="#yt">Brainiac Battle</a></li>
+                    <li><a href="#pc">Moto Cap</a></li>
+                    <li><a href="#pc">Product Photography</a></li>
+                    <li><a href="#pc">El Clasico</a></li>
+                    <li><a href="#yrc">Word Out</a></li>
+                    <li><a href="#yrc">Housie</a></li>  
+                </ul>
+            </div>
+        </div>
+        <div class="onlineevent" id="online">
+            <ul>
+                <h2 id="fac2">ONLINE</h2>
+                <li><a href="#gaming">Valorant</a></li>
+            </ul>
+        </div>
+        <div class="registernow">
+            <a href="../pages/sponsers.html">
+                <i class="fa-regular fa-hand-point-right"></i>
+                <p>Register Now</p>
+                <i class="fa-regular fa-hand-point-left"></i>
+            </a>
+        </div><br><br>
+        <div class="brouchers">
+            <div id="fac" class="eventsunderclub">
+                <h3 id="music">Fine Arts Club</h3>
+                <div class="faccategory">
+                    <h4>MUSIC</h4>
+                    <div class="events">
+                        <div id="cashprize" class="event">
+                            <a href="../images/day2/HARMONYHANABImin.jpg"><img src="../images/day2/HARMONYHANABImin.jpg" alt=""></a>
+                            <b>HARMONY HANABI</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/RAPBATTLEmin.jpg"><img src="../images/day2/RAPBATTLEmin.jpg" alt=""></a>
+                            <b>RAP BATTLE</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day1/ENSEMBLECOMBATBATTLEOFTHEBANDSmin.jpg"><img src="../images/day1/ENSEMBLECOMBATBATTLEOFTHEBANDSmin.jpg" alt=""></a>
+                            <b>ENSEMBLE COMBAT</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day1/AMPLIFYMESOLOINCHANGEDmin.jpg"><img src="../images/day1/AMPLIFYMESOLOINCHANGEDmin.jpg" alt=""></a>
+                            <b id="dance">AMPLIFY ME</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="faccategory">
+                    <h4>DANCE</h4>
+                    <div class="events">
+                        <div id="cashprize" class="event">
+                            <a href="../images/day1/ENIGMASOLODANCEmin.jpg"><img src="../images/day1/ENIGMASOLODANCEmin.jpg" alt=""></a>
+                            <b>ENIGMA</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day2/TEAMTEMPOGROUPDANCEmin.jpg"><img src="../images/day2/TEAMTEMPOGROUPDANCEmin.jpg" alt=""></a>
+                            <b>TEAM TEMPO</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day1/RHYTHMRIOTDANCEBATTLEmin.jpg"><img src="../images/day1/RHYTHMRIOTDANCEBATTLEmin.jpg" alt=""></a>
+                            <b>RHYTHM RIOT</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/DUETRYDUODANCEmin.jpg"><img src="../images/day1/DUETRYDUODANCEmin.jpg" alt=""></a>
+                            <b id="variety">DUETRY</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="faccategory">
+                    <h4>VARIETY</h4>
+                    <div class="events">
+                        <div id="cashprize" class="event">
+                            <a href="../images/day2/DRAMATICSmin.jpg"><img src="../images/day2/DRAMATICSmin.jpg" alt=""></a>
+                            <b>DRAMATICS</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day1/MAKEAFILMmin.jpg"><img src="../images/day1/MAKEAFILMmin.jpg" alt=""></a>
+                            <b>MAKE A FILM</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/IPLAUCTIONmin.jpg"><img src="../images/day1/IPLAUCTIONmin.jpg" alt=""></a>
+                            <b>IPL Auction</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/KOLLYWOODQUIZmin.jpg"><img src="../images/day2/KOLLYWOODQUIZmin.jpg" alt=""></a>
+                            <b id="art">KOLLYWOOD QUIZ</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="faccategory">
+                    <h4>ART</h4>
+                    <div class="events">
+                        <div class="event">
+                            <a href="../images/day1/COFFEEPAINTINGCHANGEDmin.jpg"><img src="../images/day1/COFFEEPAINTINGCHANGEDmin.jpg" alt=""></a>
+                            <b>COFFEE PAINTING</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/PUZZLEmin.jpg"><img src="../images/day2/PUZZLEmin.jpg" alt=""></a>
+                            <b>PUZZLE</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day2/PORTRAITRELAYmin.jpg"><img src="../images/day2/PORTRAITRELAYmin.jpg" alt=""></a>
+                            <b>PORTRAIT RELAY</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day1/LANTERNMAKINGmin.jpg"><img src="../images/day1/LANTERNMAKINGmin.jpg" alt=""></a>
+                            <b id="fashion">LANTERN MAKING</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="faccategory">
+                    <h4>FASHION</h4>
+                    <div class="events">
+                        <div id="cashprize" class="event">
+                            <a href="../images/day2/FASHIONFIESTAmin.jpg"><img src="../images/day2/FASHIONFIESTAmin.jpg" alt=""></a>
+                            <b>FASHION FIESTA</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day2/FASHIONPARADEmin.jpg"><img src="../images/day2/FASHIONPARADEmin.jpg" alt=""></a>
+                            <b>FASHION PARADE</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/FASHIONPHOTOGRAPHYmin.jpg"><img src="../images/day2/FASHIONPHOTOGRAPHYmin.jpg" alt=""></a>
+                            <b id="gaming">FASHION PHOTOGRAPHY</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="faccategory">
+                    <h4>GAMING</h4>
+                    <div class="events">
+                        <div id="cashprize" class="event">
+                            <a href="../images/VALORANT/VALORANT.jpg"><img src="../images/VALORANT/VALORANT.jpg" alt=""></a>
+                            <b id="tm">VALORANT</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eventsunderclub">
+                <h3>Tamil Mandram</h3>
+                <div class="faccategory">
+                    <div class="events">
+                        <div class="event">
+                            <a href="../images/day1/PICKANDSPEAKmin.jpg"><img src="../images/day1/PICKANDSPEAKmin.jpg" alt=""></a>
+                            <b>PICK AND SPEAK</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/BOOKREVIEWmin.jpg"><img src="../images/day1/BOOKREVIEWmin.jpg" alt=""></a>
+                            <b>BOOK REVIEW</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/SIGNATUREmin.jpg"><img src="../images/day2/SIGNATUREmin.jpg" alt=""></a>
+                            <b>SIGNATURE</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day2/DEBATEmin.jpg"><img src="../images/day2/DEBATEmin.jpg" alt=""></a>
+                            <b id="nc">DEBATE</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eventsunderclub">
+                <h3>Nature Club</h3>
+                <div class="faccategory">
+                    <div class="events">
+                        <div class="event">
+                            <a href="../images/day2/SQUIDGAMEmin.jpg"><img src="../images/day2/SQUIDGAMEmin.jpg" alt=""></a>
+                            <b>SQUID GAME</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/SCAVENGERHUNTmin.jpg"><img src="../images/day2/SCAVENGERHUNTmin.jpg" alt=""></a>
+                            <b>SCAVENGER HUNT</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/PAINTWITHNATUREmin.jpg"><img src="../images/day1/PAINTWITHNATUREmin.jpg" alt=""></a>
+                            <b>PAINT WITH NATURE</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/ADZAPCHANGEDmin.jpg"><img src="../images/day1/ADZAPCHANGEDmin.jpg" alt=""></a>
+                            <b>ADZAP</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/OBSTACLERACEmin.jpg"><img src="../images/day1/OBSTACLERACEmin.jpg" alt=""></a>
+                            <b id="yt">OBSTACLE RACE</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eventsunderclub">
+                <h3>Yuva Tourism</h3>
+                <div class="faccategory">
+                    <div class="events">
+                        <div class="event">
+                            <a href="../images/day1/FLAMEFREECUISINEmin.jpg"><img src="../images/day1/FLAMEFREECUISINEmin.jpg" alt=""></a>
+                            <b>FLAME FREE CUISINE</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/BRAINIACBATTLECHANGEDmin.jpg"><img src="../images/day2/BRAINIACBATTLECHANGEDmin.jpg" alt=""></a>
+                            <b id="pc">BRAINIAC BATTLE</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eventsunderclub">
+                <h3>Photography Club</h3>
+                <div class="faccategory">
+                    <div class="events">
+                        <div class="event">
+                            <a href="../images/day2/MOTOCAPmin.jpg"><img src="../images/day2/MOTOCAPmin.jpg" alt=""></a>
+                            <b>MOTO CAP</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/ELCLASICOmin.jpg"><img src="../images/day2/ELCLASICOmin.jpg" alt=""></a>
+                            <b>EL CLASICO</b>
+                        </div>
+                        <div id="cashprize" class="event">
+                            <a href="../images/day1/GRAPHIXmin.jpg"><img src="../images/day1/GRAPHIXmin.jpg" alt=""></a>
+                            <b>GRAPHIX</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/PRODUCTPHOTOGRAPHYmin.jpg"><img src="../images/day2/PRODUCTPHOTOGRAPHYmin.jpg" alt=""></a>
+                            <b>PRODUCT PHOTOGRAPHY</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/CONNECTIONmin.jpg"><img src="../images/day1/CONNECTIONmin.jpg" alt=""></a>
+                            <b id="yrc">CONNECTION</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eventsunderclub">
+                <h3>Youth Red Cross</h3>
+                <div class="faccategory">
+                    <div class="events">
+                        <div class="event">
+                            <a href="../images/day2/WORDOUTmin.jpg"><img src="../images/day2/WORDOUTmin.jpg" alt=""></a>
+                            <b>WORD OUT</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/DONTANSWERmin.jpg"><img src="../images/day1/DONTANSWERmin.jpg" alt=""></a>
+                            <b>DON'T ANSWER</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day2/HOUSIEmin.jpg"><img src="../images/day2/HOUSIEmin.jpg" alt=""></a>
+                            <b>HOUSIE</b>
+                        </div>
+                        <div class="event">
+                            <a href="../images/day1/HUMANKNOTCHALLENGEmin.jpg"><img src="../images/day1/HUMANKNOTCHALLENGEmin.jpg" alt=""></a>
+                            <b id="vc">HUMAN KNOT CHALLENGE</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eventsunderclub">
+                <h3>Vishakha Club</h3>
+                <div class="faccategory">
+                    <div class="events">
+                        <div class="event">
+                            <a href="../images/day1/TOLLYWOODQUIZmin.jpg"><img src="../images/day1/TOLLYWOODQUIZmin.jpg" alt=""></a>
+                            <b>TOLLYWOOD QUIZ</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="registernow">
+            <a href="../pages/sponsers.html">
+                <i class="fa-regular fa-hand-point-right"></i>
+                <p>Register Now</p>
+                <i class="fa-regular fa-hand-point-left"></i>
+            </a>
+        </div><br><br><br><br><br>
+</body>
+</html>

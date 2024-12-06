@@ -1,0 +1,196 @@
+@import url(../all.css);
+
+
+:root{
+    --color-bg:#f3e5d4;
+    --color-black:rgb(48, 48, 48);
+    --color-red: #ff0000;
+}
+
+body{
+    background-image: url(../../images/intro/JapaneseTemple.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1{
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.897);
+    text-shadow: 0px 0px 10px black;
+    background-color: rgba(37, 37, 37, 0.603);
+    padding: 13px 0px 5px;
+}
+
+.contactinformation{
+    margin: 20px 10% 70px;
+    border: 1px solid var(--color-black);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--color-black);
+    background-color: #ffe8cdab;
+}
+.contactinformation h3{
+    margin: 10px 0px;
+    color: red;
+    letter-spacing: 1px;
+    padding: 10px 20px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient( to right , black , rgba(0, 0, 0, 0));
+}
+.contactinformation h4{
+    margin: 20px 0px 10px;
+    letter-spacing: 1px;
+}
+.fc,.sc{
+    margin-top: 40px;
+}
+.fc .flex, .sc .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0px;
+    font-size: .9rem;
+}
+.fc .flex div, .sc .flex div{
+    border: 1px solid var(--color-black);
+    padding: 8px 10px;
+    box-shadow: 0px 0px 10px var(--color-black);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.fc .flex div p , .sc .flex div p{
+    margin: 10px 0px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: var(--color-black);
+    color: var(--color-bg);
+    width: max-content;
+    border-radius: 5px;
+}
+.fc div p a, .sc div p a{
+    color: var(--color-bg);
+}
+.fc div p:hover, .sc div p:hover ,.fc div p:hover a, .sc div p:hover a{
+    color: var(--color-red);
+}
+.fc div span,.sc div span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fc .flex img, .sc .flex img{
+    width: 25px;
+    box-shadow: 0px 0px 5px var(--color-black);
+    border-radius: 50%;
+}
+.fc .flex > div p img ,.sc .flex > div p img{
+    background-color: white;
+    padding: 2px;
+    width: 20px;
+}
+
+.contactsocialmedia{
+    width: 100%;
+    max-width: 150px;
+    margin: 30px auto 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contactsocialmedia a span{
+    display: none;
+    animation: continfoopen 2s 1;
+    -webkit-animation: continfoopen 2s 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    width: 0;
+    color: var(--color-bg);
+}
+
+@keyframes continfoopen {
+    0%{
+        opacity: 0;
+        width: max-content;
+    }
+    100%{
+        opacity: 100%;
+        width: max-content;
+    }
+}
+
+.contactsocialmedia a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.contactsocialmedia a:hover{
+    border-radius: 15px;
+    padding: 5px 15px 5px 5px;
+    background-color: black;
+}
+
+.contactsocialmedia a:hover span{
+    display: block;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+
+.contactsocialmedia a img{
+    width: 50px;
+    text-align: center;
+    transition: all ease-in-out .4;
+    border-radius: 10px;
+    padding: 2px;
+}
+#location{
+    width: 70px;
+}
+
+@media (max-width: 500px) {
+    .bccontact{
+        background-color: rgba(122, 102, 72, 0.397);
+        box-shadow: 0px 0px 10px rgba(228, 147, 27, 0.397);
+    }
+    .contactsocialmedia{
+        margin: 30px auto 80px;
+        gap: 10px;
+        width: 100%;
+    }
+    .contactsocialmedia a:hover span{
+        display: none;
+        letter-spacing: 1.5px;
+        font-size: 1rem;
+    }
+    .contactsocialmedia a:hover{
+        border-radius: 15px;
+        padding: 0px 0px 0px 0px;
+        background-color: none;
+    }
+    .contactsocialmedia a:hover{
+        border-radius: 15px;
+        padding: 0px;
+        background-color: none;
+    }
+    .contactsocialmedia a img{
+        width: 35px;
+        text-align: center;
+        transition: all ease-in-out .4;
+        border-radius: 10px;
+        padding: 0px;
+    }
+    #location{
+        width: 45px;
+}
+}

@@ -1,0 +1,399 @@
+@import url(./all.css);
+
+
+:root{
+    --color-bg:#f3e5d4;
+    --color-black:rgb(48, 48, 48);
+    --color-red: #ff0000;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: var(--color-bg);
+    font-family: "The Last Shuriken Regular";
+}
+.collegelogopresents{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.collegelogopresents div{
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    animation: waitclglogo 5s 1;
+    -webkit-animation: waitclglogo 5s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes waitclglogo {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    40%{
+        display: none;
+        opacity: 40%;
+    }
+    100%{
+        display: block;
+        opacity: 100%;
+    }
+}
+.collegelogopresents img{
+    width: 450px;
+}
+.collegelogopresents h2{
+    font-size: 2.7rem;
+    margin-top: 40px;
+    letter-spacing: .9px;
+    background: linear-gradient(to bottom,red, black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.introbodyar{
+    animation: wait 5s 1;
+    -webkit-animation: wait 5s 1;
+}
+@keyframes wait {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    80%{
+        display: none;
+        opacity: 40%;
+    }
+    100%{
+        display: block;
+        opacity: 100%;
+    }
+}
+
+.introflexing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    height: 100dvh;
+    margin: 10px auto;
+}
+
+.introcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.introcontent::after{
+    position: absolute;
+    width: 1.3px;
+    height: 0px;
+    right: -53px;
+    transform: rotate(-25deg);
+    content: " ";
+    background-color: var(--color-black);
+    border-left: 2px solid var(--color-black);
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    box-shadow: -4px 0px 8px var(--color-black);
+    animation: slidedivde 3s 1;
+    -webkit-animation: slidedivde 3s 1;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+@keyframes slidedivde {
+    0%{
+        opacity: 0%;
+        height: 0px;
+
+    }
+    50%{
+        opacity: 0%;
+        height: 0px;
+
+    }
+    100%{
+        height: 500px;
+        opacity: 100%;
+    }
+}
+
+.introcontent p{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-black);
+    font-size: 4rem;
+    animation: logotoleft 2s 1;
+    -webkit-animation: logotoleft 2s 1;
+    animation-fill-mode: forwards;
+    cursor: default;
+    position: relative;
+}
+@keyframes logotoleft {
+    0%{
+        margin-right: -200px;
+        opacity: 0%;
+    }
+    50%{
+        margin-right: -200px;
+        opacity: 0%;
+    }
+    100%{
+        margin-right: 0px;
+        color: var(--color-black);
+    }
+}
+
+.introcontent p::after{
+    position: absolute;
+    height: auto;
+    width: auto;
+    bottom: -20px;
+    left: 0;
+    content: "歓迎";
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.introcontent p span{
+    animation: spantoleft 2s 1;
+    -webkit-animation: spantoleft 2s 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    background: linear-gradient(to bottom, black,red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.introcontent p span:hover{
+    background: linear-gradient(to bottom ,red, black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.introcontent p #firstspan{
+    animation-delay: .5s;
+    font-size: 5rem;
+}
+.introcontent p span:nth-child(2){
+    animation-delay: 1s;
+}
+.introcontent p span:nth-child(3){
+    animation-delay: 1.5s;
+}
+.introcontent p span:nth-child(4){
+    animation-delay: 2s;
+}
+.introcontent p span:nth-child(5){
+    animation-delay: 2.5s;
+}
+.introcontent p #lastspan{
+    animation-delay: 3s;
+    font-size: 5rem;
+}
+@keyframes spantoleft {
+    0%{
+    }
+    50%{
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 0px;
+    }
+}
+
+
+
+
+.introcontent > div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.introcontent > div a{
+    color: var(--color-black);
+    margin-right: -20px;
+    margin-top: 15px;
+    transition: all .4s;
+    animation: logotolefta 2s 1;
+    -webkit-animation: logotolefta 2s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    opacity: 0%;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, red , black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.introcontent > div a:hover{
+    letter-spacing: 4px;
+    background: linear-gradient(to right, black,red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes logotolefta {
+    0%{
+        margin-right: -200px;
+        opacity: 0%;
+    }
+    50%{
+        margin-right: -200px;
+        opacity: 0%;
+    }
+    100%{
+        margin-right: -20px;
+        opacity: 90%;
+    }
+}
+
+
+
+.introimg{
+    display: flex;
+    animation: logotoright 2s 1;
+    -webkit-animation: logotoright 2s 1;
+    animation-fill-mode: forwards;
+    margin-top: -50px;
+}
+@keyframes logotoright {
+    0%{
+        margin-left: -80px;
+    }
+    50%{
+        margin-left: -80px;
+    }
+    100%{
+        margin-left: 40px;
+    }
+}
+.introimg img{
+    max-width: 350px;
+    border-radius: 50%;
+}
+
+@media (min-width:551px) {
+    .introflexing{
+        min-width: 800px;
+    }
+}
+
+@media (max-width:551px) {
+    .collegelogopresents img{
+        margin: 0px 10%;
+        width: 80%;
+    }
+    .collegelogopresents h2{
+        font-size: 1.8rem;
+        margin-top: 40px;
+        background: linear-gradient(to bottom, black,red);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .introflexing{
+        display: flex;
+        flex-direction: column-reverse;
+        max-height: 100dvh;
+        gap: 0px;
+    }
+
+    .introcontent{
+        animation: logotobottom 1s 1;
+        -webkit-animation: logotobottom 1s 1;
+    }
+    @keyframes logotobottom {
+        0%{
+            margin-top: -110px;
+            opacity: 0%;
+        }
+        50%{
+            margin-top: -110px;
+            opacity: 0%;
+        }
+        100%{
+            margin-top: 40px;
+        }
+    }
+    .introcontent::after{
+        display: none;
+    }
+
+    .introimg{
+        animation: logototop 1s 1;
+        -webkit-animation: logototop 1s 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes logototop {
+        0%{
+            margin-bottom: -30px;
+        }
+        50%{
+            margin-bottom: -30px;
+        }
+        100%{
+            margin-bottom: 0px;
+        }
+    }
+    .introcontent p{
+        font-size: 3rem;
+        margin-top: 5px;
+    }
+
+    .introcontent p::after{
+        font-size: .9rem;
+        bottom: -10px;
+        letter-spacing: .5px;
+    }
+    .introcontent p #firstspan ,.introcontent p #lastspan{
+        font-size: 3.5rem;
+    }
+    .introimg{
+        margin-top: 0px;
+    }
+    .introimg img{
+        max-width: 220px;
+        border-radius: 50%;
+    }
+    .introcontent > div a{
+        color: var(--color-black);
+        margin-top: 5px;
+        animation: logotolefta 2s 1;
+        -webkit-animation: logotobottoma 2s 1;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+        opacity: 0%;
+        margin-right: 0px;
+    }
+    @keyframes logotobottoma {
+        0%{
+            margin-top: -200px;
+            opacity: 0%;
+        }
+        30%{
+            margin-top: -200px;
+            opacity: 0%;
+        }
+        50%{
+            margin-right: 50px;
+            margin-top: 0px;
+            opacity: 60%;
+        }
+        100%{
+            margin-right: -35px;
+            opacity: 90%;
+        }
+    }
+}

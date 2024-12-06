@@ -1,0 +1,324 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url(../../images/intro/JapaneseTemple.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bodyar{
+    padding-top: 50px;
+}
+.alllogos{
+    background-image: url(../../images/intro/JapaneseTemple.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 130px 0px 50px;
+}
+
+.welsparkz{
+    margin: 0px 5% 80px 5%;
+}
+.welsparkz h1{
+    text-align: right;
+    font-size: 4rem;
+    color: rgba(247, 221, 167, 0.788);
+    background: linear-gradient(to top, rgba(255, 0, 0, 0) , rgba(0, 0, 0, 0.781) 40%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.welsparkz h1 span{
+    letter-spacing: 1px;
+}
+.welsparkz h1 span:last-child{
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.315), rgba(0, 0, 0, 0.233));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.collegelogo , .sparkzlogo{
+    font-family: 'soka Heavy';
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0px 5% 40px ;
+}
+.sparkzlogo{
+    margin: 50px 5% 40px ;
+    position: relative;
+}
+.collegelogo .content , .sparkzlogo .content{
+    width: 50%;
+    background-color: rgba(2, 2, 2, 0.646);
+    color: var(--color-bg);
+}
+.content > p b{
+    font-family: "The Last Shuriken Regular";
+    letter-spacing: 1px;
+    color: black;
+    background-color: var(--color-bg);
+    padding: 10px 20px 5px;
+    border-radius: 10px;
+}
+.content > p {
+    margin-top: 20px;
+}
+.content span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+.collegelogo .image , .sparkzlogo .image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.collegelogo .image a img{
+    width: 250px;
+    box-shadow: 0px 15px 20px black;
+    border-radius: 50%;
+}
+.sparkzlogo .image a img{
+    width: 250px;
+}
+.collegelogo .content, .sparkzlogo .content{
+    font-size: .9rem;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 1.4;
+    text-align: justify;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px black;
+}
+.marq{
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+}
+marquee{
+    border-bottom: 2px solid black;
+    padding: 10px 0px 5px;
+    font-size: .9rem;
+    font-family: 'soka Heavy';
+    background-color: white;
+    letter-spacing: .3px;
+}
+
+.event{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: .9rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px white;
+    flex-wrap: nowrap;
+    overflow: auto;
+    transition: all 2s;
+}
+
+.club{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    min-width: max-content;
+    padding: 5px 10px;
+    font-family: 'soka Heavy';
+}
+.club a img{
+    width: auto;
+    height: 60px;
+}
+.club a img:hover{
+    transform: scale(1.2);
+}
+
+.flagshipevents{
+    height: auto;
+    width: max-content;
+    margin: 50px auto 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--color-bg);
+    box-shadow: 0px 0px 10px var(--color-bg);
+    background-color: #f3e5d4c4;
+    border-radius: 20px;
+}
+.flagshipevents h3, .flagshipevents i{
+    color: red;
+    animation: flagheadcolor 1s infinite;
+    -webkit-animation: flagheadcolor 1s infinite;
+}
+@keyframes flagheadcolor {
+    from{
+        color: red;
+    }
+    to{
+        color: black;
+    }
+}
+.flagintroflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+.flaghead{
+    width: max-content;
+}
+.flagshipevents h3{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(48, 47, 47, 0.445);
+    letter-spacing: 1.2px;
+    word-spacing: 3px;
+    border: 1px solid var(--color-black);
+    padding: 15px 40px 5px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 0px;
+}
+.flagintroflex img{
+    width: 230px;
+    border-radius: 50%;
+    box-shadow: -5px 10px 10px black;
+}
+.flagshipevents > div{
+    margin: 15px 0px;
+}
+.flagflex{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flagflex i{
+    font-size: 1.5rem;
+}
+.flagflex a{
+    color: rgb(31, 30, 30);
+    font-size: 1rem;
+}
+
+@media (max-width:800px) {
+    .collegelogo .image img{
+        width: 300px;
+    }
+    .sparkzlogo .image img{
+        width: 200px;
+    }
+}
+
+@media (max-width:650px) {
+    .welsparkz{
+        margin: 0px 0px 80px 15px;
+    }
+    .welsparkz h1{
+        text-align: left;
+        font-size: 3rem;
+        color: rgba(247, 221, 167, 0.788);
+        background: linear-gradient(to top, rgba(255, 0, 0, 0) , rgba(0, 0, 0, 0.781) 40%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .collegelogo{
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0px 5% 40px ;
+    }
+    .collegelogo .content , .sparkzlogo .content{
+        width: 100%;
+        background-color: rgba(2, 2, 2, 0.455);
+    }
+    .sparkzlogo{
+        flex-direction: column-reverse;
+    }
+    .collegelogo .image a img{
+        width: 220px;
+    }
+    .sparkzlogo .image a img{
+        width: 220px;
+    }
+    .event{
+        width: 100%;
+        justify-content: start;
+        flex-wrap: nowrap;
+        overflow: auto;
+        gap: 15px;
+        transition: all 2s;
+    }
+    .club{
+        font-size: .65rem;
+    }
+    .club a img{
+        width: auto;
+        height: 50px;
+    }
+    .collegelogo , .sparkzlogo{
+        font-family: 'soka Heavy';
+        display: flex;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0px 0% 40px ;
+    }
+    .sparkzlogo{
+        margin: 0px 0% 0px ;
+    }
+    .collegelogo .content , .sparkzlogo .content{
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: 0px 0px 15px black;
+    }
+    .collegelogo .content {
+        margin-top: 40px;
+    }
+    .alllogos{
+        padding: 130px 0px 0px;
+    }
+    marquee{
+        font-size: .8rem;
+    }
+    .flagshipevents{
+        width: 90%;
+        margin: 50px 5% 100px;
+    }
+    .flagintroflex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 28px;
+    }
+    .flaghead{
+        width: 100%;
+    }
+    .flagintroflex h3{
+        width: 100%;
+    }
+    .flagintroflex img{
+        width: 200px;
+    }
+    .flagflex i{
+        font-size: 1.3rem;
+    }
+    .flagflex a{
+        color: rgb(31, 30, 30);
+        font-size: .9rem;
+    }
+}

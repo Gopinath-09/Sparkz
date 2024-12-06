@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image/png" href="../images/intro/sparkzlogojapedited.png"/>
+    
+    <link rel="stylesheet" href="../css/components/navbar.css?v=10" asp-append-version="true">
+    <link rel="stylesheet" href="../css/pages/gallery.css?v=10" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <div class='nvbar'>
+            <input type='checkbox' onclick="bluring()" name='' id='nvticker'>
+            <div id="nvbarbody" class='nvbarbody'>
+                <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                <label class='nvbaropener' for='nvticker'>
+                    <div class="threebar">
+                        <span></span><span></span><span></span>
+                    </div>
+                </label>
+            </div>
+            <div class='nvbaropen'>
+                <div class='nveventlogoandbar'>
+                    <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                    <label class='nvbarcloser' for='nvticker'>
+                        <div class="twobarclose">
+                            <span id="twobarfirst"></span><span id="twobarsecond"></span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <div class="nvlinks">
+                        <a href='./sparkz.html'><div><p>Home</p></div></a>
+                        <a href='./events.html'><div><p>Events</p></div></a>
+                        <a href='./announcements.html'><div><p>Celebrities</p></div></a>
+                        <a id="nvlinksactivecolor" href='#'><div><p>Gallery</p></div></a>
+                        <a href='./sponsers.html'><div><p>Register</p></div></a>
+                        <a href='./contact.html'><div><p>Contact</p></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gotop">
+                <a href="#bodyar">GO TOP</a>
+            </div>
+            
+            <script type="text/javascript">
+                function bluring(){
+                    const ticker = document.getElementById('nvticker');
+                    const hidebodyar = document.getElementById('bodyar');
+                    if(ticker.checked == true){
+                        hidebodyar.style.filter = 'blur(25px)';
+                        hidebodyar.style.filter = '-webkit-blur(25px)';
+                        hidebodyar.style.opacity = '50%';
+                        hidebodyar.style.transition ='all ease-in .6s';
+                        hidebodyar.style.height = '100dvh';
+                        hidebodyar.style.overflow = 'hidden';
+                    }
+                    else if(ticker.checked == false){
+                        hidebodyar.style.filter = 'none';
+                        hidebodyar.style.opacity = '100%';
+                        hidebodyar.style.transition ='all ease-out .5s';
+                        hidebodyar.style.height = 'auto';
+                        hidebodyar.style.overflow = 'auto';
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    <div id="bodyar" class="bodyar">
+        <header>
+            <h1>Gallery</h1>
+        </header>
+        <div class="eventgallery">
+            <div class="verti">
+                <div class="vertifirst">
+                    <div><img src="../images/gallery/057d2e94-b8bc-485a-b6c0-97e6957bf71c.jpg" alt=""></div>
+                    <div><img src="../images/gallery/9cc576fd-c797-481b-a6ad-e9f794037231.jpg" alt=""></div>
+                </div>
+                <div>
+                    <div><img src="../images/gallery/d6586e0b-8549-4b32-943d-6968e3111718.jpg" alt=""></div>
+                    <div><img src="../images/gallery/DSC_0181.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="horiz">
+                <div><img src="../images/gallery/22844bdb-cb0a-4f3f-a9d9-4e035d4b2327.jpg" alt=""></div>
+                <div><img src="../images/gallery/91e9ef9f-63a3-4636-952b-1f59397e436a.jpg" alt=""></div>
+                <div><img src="../images/gallery/DSC_0165.jpg" alt=""></div>
+                <div><img src="../images/gallery/DSC_0166.jpg" alt=""></div>
+                <div><img src="../images/gallery/DSC_0387-min.JPG" alt=""></div>
+                <div><img src="../images/gallery/f667bd6e-3c3c-4ace-a3a5-e92b1eb31f1a.jpg" alt=""></div>
+                <div><img src="../images/gallery/IMG_4686-_1_.jpg" alt=""></div>
+                <div><img src="../images/gallery/IMG_9566-min.JPG" alt=""></div>
+                <div><img src="../images/gallery/IMG_9717.JPG" alt=""></div>
+                <div><img src="../images/gallery/IMG_9720-min.JPG" alt=""></div>
+                <div><img src="../images/gallery/IMG_9785-min.JPG" alt=""></div>
+                <div><img src="../images/gallery/IMG_9801-min.JPG" alt=""></div>
+                <div><img src="../images/gallery/IMG_9840-min.JPG" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

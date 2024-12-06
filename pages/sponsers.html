@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="../images/intro/sparkzlogojapedited.png"/>
+    
+    <link rel="stylesheet" href="../css/components/navbar.css?v=10" asp-append-version="true">
+    <link rel="stylesheet" href="../css/pages/sponsers.css?v=10" asp-append-version="true">
+</head>
+<body>
+    <header>
+        <div class='nvbar'>
+            <input type='checkbox' onclick="bluring()" name='' id='nvticker'>
+            <div id="nvbarbody" class='nvbarbody'>
+                <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                <label class='nvbaropener' for='nvticker'>
+                    <div class="threebar">
+                        <span></span><span></span><span></span>
+                    </div>
+                </label>
+            </div>
+            <div class='nvbaropen'>
+                <div class='nveventlogoandbar'>
+                    <img src='../images/intro/sparkzlogojapedited.png' alt=''>
+                    <label class='nvbarcloser' for='nvticker'>
+                        <div class="twobarclose">
+                            <span id="twobarfirst"></span><span id="twobarsecond"></span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <div class="nvlinks">
+                        <a href='./sparkz.html'><div><p>Home</p></div></a>
+                        <a href='./events.html'><div><p>Events</p></div></a>
+                        <a href='./announcements.html'><div><p>Celebrities</p></div></a>
+                        <a href='./gallery.html'><div><p>Gallery</p></div></a>
+                        <a id="nvlinksactivecolor" href='#'><div><p>Register</p></div></a>
+                        <a href='./contact.html'><div><p>Contact</p></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gotop">
+                <a href="#bodyar">GO TOP</a>
+            </div>
+            
+            <script type="text/javascript">
+                function bluring(){
+                    const ticker = document.getElementById('nvticker');
+                    const hidebodyar = document.getElementById('bodyar');
+                    if(ticker.checked == true){
+                        hidebodyar.style.filter = 'blur(25px)';
+                        hidebodyar.style.filter = '-webkit-blur(25px)';
+                        hidebodyar.style.opacity = '50%';
+                        hidebodyar.style.transition ='all ease-in .6s';
+                        hidebodyar.style.height = '100dvh';
+                        hidebodyar.style.overflow = 'hidden';
+                    }
+                    else if(ticker.checked == false){
+                        hidebodyar.style.filter = 'none';
+                        hidebodyar.style.opacity = '100%';
+                        hidebodyar.style.transition ='all ease-out .5s';
+                        hidebodyar.style.height = 'auto';
+                        hidebodyar.style.overflow = 'auto';
+                    }
+                }
+            </script>
+        </div>
+    </header>
+    <div id="bodyar" class="bodyar">
+        <header><h1>REGISTER</h1></header>
+        <div class="regis">
+            <h2>Register Below</h2><br>
+            <div class="notes">
+                <div class="ginstructions">
+                    <h3 style="text-shadow: 0px 0px 20px white;">General instructions</h3><br><br>
+                    <li style="list-style: numbers;">Registration fee is Rs.350/per-head with which external participants can participate in any number of events without time clash plus Proshows on both days.</li><br>
+                    <li style="list-style: numbers;">College ID Card and Bonafide certificates is mandatory for external participants.</li><br>
+                    <li style="list-style: numbers;">Registration desk will be open upto 9 am on both days.</li><br>
+                    <li style="list-style: numbers;">Accomodation and food will be provided on prior request with payment of Rs.400 per day.</li><br>
+                    <li style="list-style: numbers;">Students must adhere to university rules and regulations, any unruly behavior will lead to disqualification of entire team.</li><br>
+                    <li style="list-style: numbers;">Students must follow proper dress code.</li><br>
+                    <li style="list-style: numbers;">Judges decision will be final in all the events.</li><br>
+                    <li style="list-style: numbers;">Students must follow discipline and punctuality in all the events.</li><br>
+                    <li style="list-style: numbers;">Sparkz team will not be responsible for any of their belongings.</li><br>
+                    <li style="list-style: numbers;">Before registering, kindly go through the event timings to avoid clash, Sparkz team will not be responsible for any such time clash.</li><br><br><br>
+                </div>
+                <h3 style="text-shadow: 0px 0px 20px white;">Notes for Prelim:</h3><br>
+                <li><b>Ensemble Combat - Battle of the Bands
+                </b></li>
+                <li><b>Solo Singing - Harmony Hanabi</b></li><br>
+                <p>For these both events participants must pay Rs.350/Per-head and verify before uploading your prelims video file. <br> (File Attachment is inside the document)</p>
+                <br>
+                <h4 style="color: rgb(0, 0, 0); border: 1px solid black;
+                background-color: red; width: max-content; padding: 10px 10px 7px; border-radius: 7px;">*Only Video file for Prelims*</h4>
+            </div>
+            <div class="registerlink">
+                <div class="registernow">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq5xUAfXQVf35bUiXtgQpX4MxaABf0G91vcsg9MeBx_Nj2pQ/viewform?usp=pp_url">
+                        <i class="fa-regular fa-hand-point-right"></i>
+                        <p>Register Now</p>
+                        <i class="fa-regular fa-hand-point-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

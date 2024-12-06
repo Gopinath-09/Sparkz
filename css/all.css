@@ -1,0 +1,29 @@
+@import url("./thelastsuriken/style.css");
+@import url("./sokafont/style.css");
+
+.body{
+    background-color: var(--color-bg);
+    min-width: 270px;
+}
+.bodyar{
+    font-family: 'soka Heavy';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'The Last Shuriken Regular';
+}
+
+
+:root{
+    --color-bg:#f3e5d4;
+    --color-black:rgb(48, 48, 48);
+    --color-red: #ff0000;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
